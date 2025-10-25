@@ -1,0 +1,116 @@
+/* Navbar Styling */
+.navbar {
+  background-color: #8c7452; /* Beige */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e8e5e2;
+}
+
+.navbar-nav .nav-link {
+  color: #dfdcd8;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Search Bar & Buttons */
+.d-flex .form-control {
+  width: 300px; /* Wider search input */
+  margin-right: 10px;
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow effect */
+}
+
+/* Shadow effect for search bar */
+.d-flex .form-control:hover,
+.d-flex .form-control:focus {
+  box-shadow: 0 0 8px rgba(142, 107, 63, 0.8); /* Light shadow when hovered or focused */
+}
+
+.btn-outline-success,
+.btn-outline-primary {
+  width: 120px; /* Equal width */
+  padding: 8px 0;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  color: white;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+/* Remove all active/focus states completely */
+.btn-outline-success:focus,
+.btn-outline-primary:focus,
+.btn-outline-success:active,
+.btn-outline-primary:active,
+.btn-outline-success:active:focus,
+.btn-outline-primary:active:focus,
+.btn-outline-success:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-success:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-success.dropdown-toggle,
+.show > .btn-outline-primary.dropdown-toggle {
+  background-color: transparent !important;
+  color: white !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Register Button Shadow Effect */
+.register-btn:hover,
+.btn-outline-primary:hover,
+.btn-outline-success:hover {
+  box-shadow: 0 0 10px rgba(142, 107, 63, 0.8); /* Shadow on hover */
+}
+
+.btn-outline-primary {
+  border-color: #8e6b3f;
+  color: white;
+}
+
+.btn-outline-primary:hover {
+  background-color: #8e6b3f;
+  color: white;
+}
+
+.btn-outline-success:hover {
+  background-color: #8e6b3f;
+  color: white;
+  border-color: #8e6b3f;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('../../public/images/1.png');
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 56px - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.promo-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 20px;
+  color: white;
+  max-width: 600px;
+  width: 90%;
+}
+
+/* Footer Styles */
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}

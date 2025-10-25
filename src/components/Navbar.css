@@ -1,0 +1,75 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: #f5f5dc; /* Light beige */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1030;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #5c4033 !important; /* Rich brown */
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: #5c4033 !important; /* Dark brown */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #8b5e3c !important; /* Soft brown */
+}
+
+.dropdown-menu {
+  background-color: #fffaf0; /* Floral white/beige */
+  border: 1px solid #e0d8c3;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.dropdown-item {
+  color: #5c4033;
+}
+
+.dropdown-item:hover {
+  background-color: #f0e6d2; /* Light beige hover */
+  color: #8b5e3c;
+}
+
+.navbar .form-control {
+  border-radius: 0.3rem;
+  border: 1px solid #cbbfa2;
+  background-color: #fffaf0;
+  color: #5c4033;
+}
+
+.navbar .form-control::placeholder {
+  color: #a09078;
+}
+
+.navbar .btn-outline-success {
+  border-color: #8b5e3c;
+  color: #8b5e3c;
+}
+
+.navbar .btn-outline-success:hover {
+  background-color: #8b5e3c;
+  color: #ffffff;
+}
+
+.icon-group .nav-link {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.icon-group .nav-link:hover {
+  color: #333;
+}
+
+.badge {
+  font-size: 0.7rem;
+}

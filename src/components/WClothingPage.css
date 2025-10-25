@@ -1,0 +1,47 @@
+/* Background color for the entire page */
+body {
+  background-color: #a48065;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Container for product list */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  background-color: #a48065;
+}
+
+/* Each product card style */
+.product-card {
+  width: 30%;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  background-color: #f8f8f8;
+}
+
+/* Styling for product images - fixed size */
+.product-image {
+  width: 100%;
+  height: 700px; /* Fixed height */
+  object-fit: cover; /* Ensures image fills space and is cropped if needed */
+  border-radius: 8px;
+}

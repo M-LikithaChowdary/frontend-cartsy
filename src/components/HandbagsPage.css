@@ -1,0 +1,80 @@
+/* Background color and general layout */
+.handbags-page {
+  padding: 40px 20px;
+  background-color: #a48065; /* Same as WClothingPage */
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.handbags-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #fff; /* Contrast with dark background */
+}
+
+/* Grid layout for handbags */
+.handbag-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 items per row */
+  gap: 25px;
+}
+
+/* Individual handbag cards */
+.handbag-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.handbag-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling - same size for all */
+.handbag-card img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Text and price */
+.handbag-card h5 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.handbag-card p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.handbag-card .price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #a57446;
+  margin-bottom: 10px;
+}
+
+.handbag-card .btn {
+  margin-top: 5px;
+  background-color: #a48065;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.handbag-card .btn:hover {
+  background-color: #8c654e; /* Slightly darker shade on hover */
+  color: #fff;
+}
+
