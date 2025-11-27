@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './components/CartContext';
 import Layout from './components/Layout';
 import CartPage from './components/CartPage';
@@ -42,6 +42,7 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 function App() {
   return (
     <CartProvider>
+    <Router>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -85,6 +86,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Route>
       </Routes>
+    </Router>
     </CartProvider>
   );
 }
